@@ -6,5 +6,4 @@ else
     TAG="$TRAVIS_BRANCH"
 fi
 docker build -f Dockerfile -t "cicd-buzz":"1" .
-docker tag cicd-buzz:1 37913hexaware/cicd-buzz
-docker push
+docker push cicd-buzz:1
